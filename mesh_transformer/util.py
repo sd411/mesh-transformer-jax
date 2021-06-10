@@ -1,6 +1,8 @@
 import jax
 import jax.numpy as jnp
-from optax._src.transform import OptState, GradientTransformation, AdditiveWeightDecayState
+from optax._src.base import OptState
+from optax._src.base import GradientTransformation
+from optax._src.transform import AdditiveWeightDecayState
 
 
 def gpt3_schedule(warmup_steps,
